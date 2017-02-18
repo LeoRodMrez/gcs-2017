@@ -65,10 +65,16 @@
     <AndroidResource Include="Resources\layout\feed.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\favorites.axml">
+    <AndroidResource Include="Resources\layout\profile.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\bookmarks.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\favorites.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\categoriesSelection.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
