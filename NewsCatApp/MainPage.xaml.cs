@@ -9,7 +9,7 @@ namespace NewsCatApp
 	{
 		public MainPage()
 		{
-			InitializeComponent();
+			//InitializeComponent();
 		}
 	}
 }

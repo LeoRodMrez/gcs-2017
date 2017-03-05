@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace NewsCatApp
 {
@@ -8,5 +9,15 @@ namespace NewsCatApp
 		{
 			InitializeComponent();
 		}
-	}
+
+        public void clickButton()
+        {
+            
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Perfil());
+        }
+    }
 }
