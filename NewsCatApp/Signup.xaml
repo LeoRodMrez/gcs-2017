@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NewsCatApp.Signup">
+	<StackLayout Padding="10">
+      <Label Text="Sign Up" FontSize="40"/>
+		<Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
+      <Label Text="Create an account"/>
+	  <Entry Placeholder="Email"/>
+	  <Entry Placeholder="Username"/>
+	  <Entry IsPassword="true" Placeholder="Password"/>
+	  <Entry IsPassword="true" Placeholder="re: Password"/>
+	  <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+        <Button Margin="5" Text="Cancel" Clicked="cancel_click"/>
+	    <Button Margin="5" Text="Sign Up!" Clicked="signup_click"/>
+	  </StackLayout>
+    </StackLayout>
+</ContentPage>

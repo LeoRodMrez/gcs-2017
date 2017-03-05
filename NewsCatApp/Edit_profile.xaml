@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NewsCatApp.Edit_profile">
+	<StackLayout Padding="10">
+      <Label Text="Edit Profile" FontSize="40"/>
+      <Label Text="Edit your profile information"/>
+	  <Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
+	  <Entry Placeholder="Name..."/>
+	  <Entry Placeholder="Email..."/>
+	  <Entry IsPassword="true" Placeholder="Old Password"/>
+	  <Entry IsPassword="true" Placeholder="New Password"/>
+		<Entry IsPassword="true" Placeholder="re: New Password"/>
+	  <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+        <Button Margin="5" Text="Cancel" Clicked="cancel_click"/>
+	    <Button Margin="5" Text="Save" Clicked="save_click"/>
+	  </StackLayout>
+    </StackLayout>
+</ContentPage>

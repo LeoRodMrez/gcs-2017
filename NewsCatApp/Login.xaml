@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NewsCatApp.Login">
+	<StackLayout Padding="10">
+      <Label Text="Log In" FontSize="40"/>
+		<Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
+      <Label Text="Access your account"/>
+	  <Entry Placeholder="Username"/>
+	  <Entry IsPassword="true" Placeholder="Password"/>
+	<StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+      <Button Margin="5" Text="Log In" Clicked="login_click"/>
+	  <Button Margin="5" Text="Sign Up" Clicked="signup_click"/>
+	</StackLayout>
+    </StackLayout>
+</ContentPage>

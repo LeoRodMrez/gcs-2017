@@ -17,7 +17,7 @@ namespace NewsCatApp
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Perfil());
+			Navigation.PushModalAsync(new Login());
         }
     }
 }

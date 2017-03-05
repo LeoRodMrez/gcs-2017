@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NewsCatApp.Feedback">
+	<StackLayout Padding="10">
+      <Label Text="FeedBack" FontSize="40"/>
+      <Label Text="Issue"/>
+	  <Entry Placeholder="Issue..."/>
+	  <Label Text="What is your suggestion?"/>
+	  <Entry Style="" Placeholder="Suggestion..." HeightRequest="350" WidthRequest="100" />
+	  <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+        <Button Margin="5" Text="Cancel" Clicked="cancel_feedback_click"/>
+	    <Button Margin="5" Text="Send Feedback" Clicked="send_feedback_click"/>
+	  </StackLayout>
+    </StackLayout>
+</ContentPage>
