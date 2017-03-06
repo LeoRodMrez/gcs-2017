@@ -3,14 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NewsCatApp.Perfil"
              Title="Perfil">
-  <ScrollView>
-    <StackLayout Padding="10">
-      <Label Text="ContentPage" FontSize="40"/>
-      <Label Text="ContentPage is the simplest type of page."/>
-      <Label Text="The content of the ContentPage is generally a layout of some sort that can be a parent to multiple children."/>
-      <Label Text="This contant page contains a StackLayout, which in turn contains a few Label views (including the large one on the top and an example of handling click commands and data binding to a Label below)."/>
-      <Button Text="Click Me" Command="{Binding IncreaseCountCommand}"/>
-      <Label Text="{Binding CountDisplay}"/>
+    <StackLayout   VerticalOptions="Start"  HorizontalOptions="StartAndExpand">
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+            <Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="User: usuario"></Label>
+                <Label Text="Email: email"></Label>
+            </StackLayout>
+            <Button Text="Edit" Clicked="Button_Clicked"/>
+        </StackLayout>
+        <Label Text="Categorias"/>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+            <Button Text="Cat1"/>
+            <Button Text="Cat2"/>
+            <Button Text="Cat3"/>
+            <Button Text="Cat4"/>
+            <Button Text="Cat5"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+            <Button Text="Bookmarks" Clicked="Button_Clicked_1"/>
+            <Button Text="FeedBack" Clicked="Button_Clicked_2"/>
+        </StackLayout>
     </StackLayout>
-  </ScrollView>
 </ContentPage>

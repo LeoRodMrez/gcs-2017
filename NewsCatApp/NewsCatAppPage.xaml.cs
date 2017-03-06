@@ -8,16 +8,12 @@ namespace NewsCatApp
 		public NewsCatAppPage()
 		{
 			InitializeComponent();
-		}
+            Device.StartTimer(TimeSpan.FromSeconds(2), () =>
+            {  
+                Navigation.PushModalAsync(new Login());
+                return false;
+            });
 
-        public void clickButton()
-        {
-            
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-			Navigation.PushModalAsync(new Login());
         }
     }
 }

@@ -21,34 +21,21 @@ namespace NewsCatApp
             InitializeComponent();
             //BindingContext = new ContentPageViewModel();
         }
-    }
 
-    class PerfilViewModel : INotifyPropertyChanged
-    {
-
-        public PerfilViewModel()
+        private void Button_Clicked(object sender, EventArgs e)
         {
-            IncreaseCountCommand = new Command(IncreaseCount);
+            Navigation.PushModalAsync(new Edit_profile());
         }
 
-        int count;
-
-        string countDisplay = "You clicked 0 times.";
-        public string CountDisplay
+        private void Button_Clicked_1(object sender, EventArgs e)
         {
-            get { return countDisplay; }
-            set { countDisplay = value; OnPropertyChanged(); }
+            Navigation.PushModalAsync(new Bookmark());
         }
 
-        public ICommand IncreaseCountCommand { get; }
-
-        void IncreaseCount() =>
-            CountDisplay = $"You clicked {++count} times";
-
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        void OnPropertyChanged([CallerMemberName]string propertyName = "") =>
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Feedback());
+        }
     }
+
 }

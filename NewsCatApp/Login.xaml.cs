@@ -14,7 +14,7 @@ namespace NewsCatApp
 
 		private void login_click(object sender, EventArgs e)
 		{
-			Navigation.PushModalAsync(new Perfil());
+			Navigation.PushModalAsync(new Feed());
 		}
 		private void signup_click(object sender, EventArgs e)
 		{
