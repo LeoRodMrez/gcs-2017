@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsCatApp.Article">
+    <ScrollView>
+        <StackLayout Padding="10">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+                <Button Margin="1" Text="+1" />
+                <Button Margin="1" Text="-1" />
+                <Button Margin="5" Text="Fav" />
+                <Button Margin="5" Text="Mark" />
+            </StackLayout>
+
+            <Label Text="Tittle" FontSize="40"/>
+            <Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
+            <Label Text="Pie de foto" />
+            <Label Text="Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. " FontSize="20"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

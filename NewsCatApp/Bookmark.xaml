@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsCatApp.Bookmark">
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="Bookmarks" FontSize="40"/>
+            
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal" >
+                <Label Text="Tittle" FontSize="20"/>
+                <Button Margin="5" Text="Eliminar" />
+            </StackLayout>
+            <Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
+            <Label Text="Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. "/>
+            <Button Margin="5" Text="Leer" Clicked="Leer_Clicked"/>
+            
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+                <Label Text="Tittle" FontSize="20"/>
+                <Button Margin="5" Text="Eliminar" />
+            </StackLayout>
+            <Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
+            <Label Text="Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. "/>
+            <Button Margin="5" Text="Leer" Clicked="Leer_Clicked"/>
+            
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+                <Button Margin="5" Text="Perfil" Clicked="Perfil_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
