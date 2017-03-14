@@ -7,18 +7,20 @@ namespace NewsCatApp
 {
 	public partial class Edit_profile : ContentPage
 	{
-		public Edit_profile()
+        private String name;
+		public Edit_profile(String inputName)
 		{
+            this.name = inputName;
 			InitializeComponent();
 		}
 
 		private void cancel_click(object sender, EventArgs e)
 		{
-			Navigation.PushModalAsync(new Perfil());
+			Navigation.PushModalAsync(new Perfil(name));
 		}
 		private void save_click(object sender, EventArgs e)
 		{
-			Navigation.PushModalAsync(new Perfil());
+			Navigation.PushModalAsync(new Perfil(name));
 		}
 	}
 }

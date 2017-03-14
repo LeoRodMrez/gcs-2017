@@ -16,15 +16,19 @@ namespace NewsCatApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Perfil : ContentPage
     {
-        public Perfil()
+        private String name;
+        public Perfil(String inputName)
         {
+            this.name = inputName;
+            this.userLabel.Text = name;
+            this.emailLabel.Text = name + "@gmail.com";
             InitializeComponent();
             //BindingContext = new ContentPageViewModel();
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Edit_profile());
+            Navigation.PushModalAsync(new Edit_profile(name));
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
@@ -34,7 +38,7 @@ namespace NewsCatApp
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Feedback());
+            Navigation.PushModalAsync(new Feedback(name));
         }
     }
 

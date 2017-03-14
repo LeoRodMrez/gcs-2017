@@ -12,8 +12,13 @@ namespace NewsCatApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Feed : ContentPage
     {
-        public Feed()
+        private String name;
+        public Feed(String inputName)
         {
+            if(name!=null && name.Length != 0)
+            {
+                name = inputName;
+            }
             InitializeComponent();
         }
 
@@ -24,7 +29,7 @@ namespace NewsCatApp
 
         private void Perfil_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Perfil());
+            Navigation.PushModalAsync(new Perfil(name));
         }
     }
 }

@@ -7,17 +7,19 @@ namespace NewsCatApp
 {
 	public partial class Feedback : ContentPage
 	{
-		public Feedback()
+        private String name;
+		public Feedback(String inputName)
 		{
+            this.name = inputName;
 			InitializeComponent();
 		}
 		private void cancel_feedback_click(object sender, EventArgs e)
 		{
-			Navigation.PushModalAsync(new Perfil());
+			Navigation.PushModalAsync(new Perfil(name));
 		}
 		private void send_feedback_click(object sender, EventArgs e)
 		{
-			Navigation.PushModalAsync(new Perfil());
+			Navigation.PushModalAsync(new Perfil(name));
 		}
 	}
 }

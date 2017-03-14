@@ -7,8 +7,8 @@
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
             <Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                <Label Text="User: usuario"></Label>
-                <Label Text="Email: email"></Label>
+                <Label x:Name="userLabel" Text="User: usuario"></Label>
+                <Label x:Name="emailLabel" Text="Email: email"></Label>
             </StackLayout>
             <Button Text="Edit" Clicked="Button_Clicked"/>
         </StackLayout>

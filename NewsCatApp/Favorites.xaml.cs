@@ -12,14 +12,16 @@ namespace NewsCatApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Favorites : ContentPage
     {
-        public Favorites()
+        private String name;
+        public Favorites(String inputName)
         {
+            this.name = inputName;
             InitializeComponent();
         }
 
         private void Perfil_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Perfil());
+            Navigation.PushModalAsync(new Perfil(name));
         }
 
         private void Leer_Clicked(object sender, EventArgs e)

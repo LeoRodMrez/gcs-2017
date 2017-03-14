@@ -14,8 +14,17 @@ namespace NewsCatApp
 
 		private void login_click(object sender, EventArgs e)
 		{
-			Navigation.PushModalAsync(new Feed());
-		}
+            String name = user.Text;
+            String contraseña = pass.Text;
+            if(name!=null && name.Length != 0 && contraseña!=null && contraseña.Length!=0)
+            {
+                Navigation.PushModalAsync(new Feed(name));
+            }else
+            {
+                DisplayAlert("Alerta", "User o contraseña vacia", "cancel");
+            }
+
+        }
 		private void signup_click(object sender, EventArgs e)
 		{
 			Navigation.PushModalAsync(new Signup());

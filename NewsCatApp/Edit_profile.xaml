@@ -4,8 +4,8 @@
       <Label Text="Edit Profile" FontSize="40"/>
       <Label Text="Edit your profile information"/>
 	  <Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
-	  <Entry Placeholder="Name..."/>
-	  <Entry Placeholder="Email..."/>
+	  <Entry x:Name="userEntry" Placeholder="Name..."/>
+      <Entry x:Name="emailEntry" Placeholder="Email..."/>
 	  <Entry IsPassword="true" Placeholder="Old Password"/>
 	  <Entry IsPassword="true" Placeholder="New Password"/>
 		<Entry IsPassword="true" Placeholder="re: New Password"/>

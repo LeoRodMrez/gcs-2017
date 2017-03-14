@@ -4,8 +4,8 @@
       <Label Text="Log In" FontSize="40"/>
 		<Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
       <Label Text="Access your account"/>
-	  <Entry Placeholder="Username"/>
-	  <Entry IsPassword="true" Placeholder="Password"/>
+	  <Entry x:Name="user" Placeholder="Username"/>
+	  <Entry x:Name="pass" IsPassword="true" Placeholder="Password"/>
 	<StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
       <Button Margin="5" Text="Log In" Clicked="login_click"/>
 	  <Button Margin="5" Text="Sign Up" Clicked="signup_click"/>
