@@ -14,26 +14,25 @@
         </StackLayout>
         <Label Text="Categorias"/>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
-            <Button Text="Cat1"/>
-            <Button Text="Cat2"/>
-            <Button Text="Cat3"/>
-            <Button Text="Cat4"/>
-            <Button Text="Cat5"/>
+            <Button Text="Ciencia"/>
+            <Button Text="Tecnologia"/>
+            <Button Text="Política"/>
+            <Button Text="España"/>
         </StackLayout>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
-            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
-            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
-            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg" HeightRequest="100" WidthRequest="100"/>
+            <Image Source="https://culturacientifica.com/app/uploads/2016/01/blogs-de-ciencia.jpg" HeightRequest="100" WidthRequest="100"/>
+            <Image Source="http://conceptodefinicion.de/wp-content/uploads/2011/08/politica.jpg" HeightRequest="100" WidthRequest="100"/>
         </StackLayout>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
-            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
-            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
-            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+            <Image Source="http://estaticos.muyinteresante.es/uploads/images/dossier/5672a7c85bafe89b158a6166/cientificos.jpg" HeightRequest="100" WidthRequest="100"/>
+            <Image Source="http://www.informaticabahia.es/wp-content/uploads/2015/04/serviciosbahia.jpg" HeightRequest="100" WidthRequest="100"/>
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg" HeightRequest="100" WidthRequest="100"/>
         </StackLayout>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
-            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
-            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
-            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg"/>
+            <Image Source="http://buscarempleo.republica.com/files/2012/08/matematicas-254x214.jpg" HeightRequest="100" WidthRequest="100"/>
+            <Image Source="http://cinemaxx.galeon.com/imagenes/cine6.jpg" HeightRequest="100" WidthRequest="100"/>
+            <Image Source="http://elplacerdelalectura.com/sites/default/files/blogpost/42088_i_teatro.jpg" HeightRequest="100" WidthRequest="100"/>
         </StackLayout>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
             <Button Text="Bookmarks" Clicked="Button_Clicked_1"/>

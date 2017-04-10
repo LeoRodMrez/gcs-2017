@@ -4,23 +4,23 @@
              x:Class="NewsCatApp.Bookmark">
     <ScrollView>
         <StackLayout Padding="10">
-            <Label Text="Bookmarks" FontSize="40"/>
             
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal" >
-                <Label Text="Tittle" FontSize="20"/>
-                <Button Margin="5" Text="Eliminar" />
-            </StackLayout>
-            <Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
-            <Label Text="Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. "/>
-            <Button Margin="5" Text="Leer" Clicked="Leer_Clicked"/>
+                <Label Text="La penúltima estación de Tony Adams" FontSize="20"/>
+                <Image Source="http://ep01.epimg.net/deportes/imagenes/2017/04/10/actualidad/1491849801_212165_1491849908_miniatura_normal.jpg" HeightRequest="100" WidthRequest="100"/>
+                <Label Text="El excentral del Arsenal, que ha entrenado en Azerbaiyán y aspira a la Premier, entrenará al Granada, propiedad de un grupo chino"/>
+                <StackLayout x:Name="noticia11" VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+                    <Button  Margin="5" Text="Eliminar" />
+                    <Button x:Name="noticia2" Margin="5" Text="Leer" Clicked="Leer_Clicked1"/>
+                </StackLayout>
+           
             
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
-                <Label Text="Tittle" FontSize="20"/>
-                <Button Margin="5" Text="Eliminar" />
-            </StackLayout>
-            <Image Source="https://image.freepik.com/iconos-gratis/perfil-macho-sombra-de-usuario_318-40244.jpg" HeightRequest="100" WidthRequest="100"/>
-            <Label Text="Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. Esto es un párrafo. "/>
-            <Button Margin="5" Text="Leer" Clicked="Leer_Clicked"/>
+                <Label Text="El autobús al que te subirás se conduce solo" FontSize="20"/>
+                <Image Source="http://ep01.epimg.net/elpais/imagenes/2017/04/10/talento_digital/1491824646_420176_1491835169_miniatura_normal.jpg" HeightRequest="100" WidthRequest="100"/>
+                <Label Text="La ciudad francesa de Lyon experimenta desde septiembre un sistema de navetas autónomas de transporte público. Hay ensayos similares por todo el planeta"/>
+                <StackLayout x:Name="noticia22" VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+                    <Button  Margin="5" Text="Eliminar"/>
+                    <Button x:Name="noticia1" Margin="5" Text="Leer" Clicked="Leer_Clicked2"/>
+                </StackLayout>
             
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
                 <Button Margin="5" Text="Perfil" Clicked="Perfil_Clicked"/>

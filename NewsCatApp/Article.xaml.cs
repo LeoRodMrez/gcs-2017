@@ -12,8 +12,10 @@ namespace NewsCatApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Article : ContentPage
     {
-        public Article()
+        private String nombre = "";
+        public Article(String inputName)
         {
+            nombre = inputName;
             InitializeComponent();
         }
     }

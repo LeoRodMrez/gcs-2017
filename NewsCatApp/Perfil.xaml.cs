@@ -20,9 +20,9 @@ namespace NewsCatApp
         public Perfil(String inputName)
         {
             this.name = inputName;
-            this.userLabel.Text = name;
-            this.emailLabel.Text = name + "@gmail.com";
             InitializeComponent();
+            this.userLabel.Text = name;
+            this.emailLabel.Text = name + "@gmail.com"; 
             //BindingContext = new ContentPageViewModel();
         }
 
@@ -33,7 +33,7 @@ namespace NewsCatApp
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Bookmark());
+            Navigation.PushModalAsync(new Bookmark(name));
         }
 
         private void Button_Clicked_2(object sender, EventArgs e)

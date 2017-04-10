@@ -26,7 +26,7 @@ namespace NewsCatApp
 
         private void Leer_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Article());
+            Navigation.PushModalAsync(new Article(name));
         }
     }
 }

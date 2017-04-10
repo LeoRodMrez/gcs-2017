@@ -20,6 +20,7 @@ namespace NewsCatApp
 		}
 		private void save_click(object sender, EventArgs e)
 		{
+            name = userEntry.Text;
 			Navigation.PushModalAsync(new Perfil(name));
 		}
 	}
